@@ -1,0 +1,31 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.escuela {
+    //@include m.bgImage('../img/chef_bg.jpg');
+    color: v.$blanco;
+    padding: 20rem 0;
+    text-align: center;
+
+    &__heading {
+        font-weight: 700;
+    }
+    &__texto {
+        font-size: 2.6rem;
+        margin: 0 auto;
+        max-width: 50rem; //esto para que cada renglon maximo mida 50rem
+    }
+    &__enlace {
+        @include m.boton(v.$primario, v.$blanco);
+    }
+}
+.notavif.notwebp .escuela{
+@include m.bgImage('../img/chef_bg.jpg');
+
+}
+.avif .escuela {
+    @include m.bgImage('../img/chef_bg.avif'); 
+}
+.webp .escuela {
+    @include m.bgImage('../img/chef_bg.webp');
+}
