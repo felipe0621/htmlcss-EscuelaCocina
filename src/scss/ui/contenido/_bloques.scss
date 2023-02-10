@@ -24,12 +24,7 @@
     &:nth-child(1){
         background-color: v.$primario;
         color: v.$blanco;
-    }
-    
-    &:nth-child(2){        
-       @include m.bgImage('../img/bloque_1.jpg');       
-       
-    }     
+    }    
     &:nth-child(3){
         background-color: v.$secundario;
         @include m.tablet { 
@@ -37,8 +32,9 @@
             
         }
     }
+    
     &:nth-child(4){
-        @include m.bgImage('../img/bloque_2.jpg');
+        //@include m.bgImage('../img/bloque_2.jpg');        
     }
     &__contenido {
         max-width: 40rem; 
@@ -52,11 +48,29 @@
     &__texto {
         font-size: 2rem;
     }
+}   
+
+//para aligerar las imagenes en el bloque 2
+.notavif.notwebp .bloque:nth-child(2) {
+    @include m.bgImage('../img/bloque_1.jpg');
+}
+.avif .bloque:nth-child(2) {
+    @include m.bgImage('../img/bloque_1.avif');
+}
+.webp .bloque:nth-child(2) {
+    @include m.bgImage('../img/bloque_1.webp');
 }
 
 
-
-
+.notavif.notwebp .bloque:nth-child(4) {
+    @include m.bgImage('../img/bloque_2.jpg');
+}
+.avif .bloque:nth-child(4) {
+    @include m.bgImage('../img/bloque_2.avif');
+}
+.webp .bloque:nth-child(4) {
+    @include m.bgImage('../img/bloque_2.webp');
+}
 
 
 

@@ -6,7 +6,7 @@
     padding: 5rem 0;
 
     &__heading{
-        @include m.heading;
+        @include m.heading;        
 
     }
     &__grid {
@@ -24,9 +24,7 @@
 .clase {
     background-color: v.$blanco;
     border: 2px solid darken(v.$gris,  10%);
-    &__imagen {
-
-    }
+    
     &__meta{
         display: flex;
         justify-content: space-between;
@@ -68,3 +66,4 @@
 
     }
 }
+

@@ -65,17 +65,10 @@
         content: '';
         display: block;
         height: 10rem;
-        //margin: 0 auto;  //para que esté centrado
-        //
-        background-image: url(../img/separador.png); 
-            
+        margin: 0 auto;  //para que esté centrado        
+        background-image: url(../img/separador.png);           
         background-repeat: no-repeat;
-        background-position: center center; //para que este posicionado debajo del texto
-        
-    }
-    
+        background-position: center center; //para que este posicionado debajo del texto         
+    }   
         
 }
-    
-    
-
